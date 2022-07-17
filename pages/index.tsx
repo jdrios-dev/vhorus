@@ -1,10 +1,14 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
+import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
 import Carousel from "../components/Carousel";
 import styles from "../styles/Home.module.css";
 
-const Home: NextPage = () => {
+type HomeProps = {
+  children: React.ReactNode | React.ReactNode[];
+};
+
+const Home = ({ children }: HomeProps) => {
   return (
     <div className={styles.container}>
       <Head>
@@ -13,9 +17,13 @@ const Home: NextPage = () => {
         <link rel="icon" href="/pira.svg" />
       </Head>
 
-      <main className={styles.main}>
-        <Carousel />
-      </main>
+      <header className={styles.link}>
+        <Link href="/">Home</Link>
+        <Link href="/flag">Flag</Link>
+        <Link href="/steps">Steps</Link>
+      </header>
+
+      <main className={styles.main}>{children || <Carousel />}</main>
 
       <footer className={styles.footer}>
         From 🇩🇪 🇧🇴 🇨🇴 To 🇪🇬
@@ -28,4 +36,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home
+export default Home;
