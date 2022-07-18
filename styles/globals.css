@@ -37,3 +37,33 @@ a {
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(134, 100, 56);
 }
+.table {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  overflow: auto;
+}
+
+.th {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+
+}
+
+.tr {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.td {
+  width: 100%;
+  border-bottom: 1px solid rgba(134, 100, 56, 0.386);
+  text-align: start;
+  padding: 0.2rem 1rem;
+}
+
+h2 {
+  font-weight: 200;
+}

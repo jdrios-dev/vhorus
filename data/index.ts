@@ -62,3 +62,43 @@ export const flag = [
     text: "Lorem ipsum Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis accusantium quo perspiciatis, et vel fugiat illo est provident commodi ",
   },
 ];
+
+
+export const stepsData = [
+  {
+    user: "Ericka",
+    steps: [
+      { date: "14-07-22", steps: 10352 },
+      { date: "15-07-22", steps: 11507 },
+      { date: "16-07-22", steps: 10093 },
+      { date: "17-07-22", steps: 10015 },
+    ],
+  },
+  {
+    user: "Johanna",
+    steps: [
+      { date: "14-07-22", steps: 0 },
+      { date: "15-07-22", steps: 0 },
+      { date: "16-07-22", steps: 0 },
+      { date: "17-07-22", steps: 0 },
+    ],
+  },
+  {
+    user: "Santiago",
+    steps: [
+      { date: "14-07-22", steps: 0 },
+      { date: "15-07-22", steps: 0 },
+      { date: "16-07-22", steps: 0 },
+      { date: "17-07-22", steps: 0 },
+    ],
+  },
+  {
+    user: "Daniel",
+    steps: [
+      { date: "14-07-22", steps: 10211 },
+      { date: "15-07-22", steps: 14177 },
+      { date: "16-07-22", steps: 21183 },
+      { date: "17-07-22", steps: 11825 },
+    ],
+  },
+];

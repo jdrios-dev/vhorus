@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import Carousel from "../components/Carousel";
+import Team from "../components/Team";
 import styles from "../styles/Home.module.css";
 
 type HomeProps = {
@@ -23,7 +24,7 @@ const Home = ({ children }: HomeProps) => {
         <Link href="/steps">Steps</Link>
       </header>
 
-      <main className={styles.main}>{children || <Carousel />}</main>
+      <main className={styles.main}>{children || <Team />}</main>
 
       <footer className={styles.footer}>
         From 🇩🇪 🇧🇴 🇨🇴 To 🇪🇬
