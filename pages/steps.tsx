@@ -61,7 +61,9 @@ const steps = () => {
                   layout="fill"
                   objectFit="contain"
                   alt={activeUser}
-                  src={`/static/steps/${activeUser}/${item.steps[index].date}.jpeg`}
+                  src={`/static/steps/${activeUser.toLowerCase()}/${
+                    item.steps[index].date
+                  }.jpeg`}
                 />
               </div>
             ))}
