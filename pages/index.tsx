@@ -29,7 +29,12 @@ const Home = ({ children }: HomeProps) => {
       <footer className={styles.footer}>
         From 🇩🇪 🇧🇴 🇨🇴 To 🇪🇬
         <span className={styles.logo}>
-          <Image src="/pira.svg" alt="Piramid Logo" width={72} height={16} />
+          <Image
+            src="/static/pira.svg"
+            alt="Piramid Logo"
+            width={72}
+            height={16}
+          />
         </span>
         <b>vHorus Team</b>
       </footer>

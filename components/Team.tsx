@@ -11,7 +11,7 @@ const Team = () => {
         style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}
       >
         {team.map((item) => (
-          <Member key={item} name={item} image={`/team/${item}.webp`} />
+          <Member key={item} name={item} image={`/static/team/${item}.webp`} />
         ))}
       </div>
     </>

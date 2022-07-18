@@ -33,7 +33,7 @@ const steps = () => {
                     cursor: "pointer",
                   }}
                 >
-                  <Image alt="file" layout="fill" src="/file.png" />
+                  <Image alt="file" layout="fill" src="/static/file.png" />
                 </div>
                 {item.user}
               </div>
@@ -59,8 +59,9 @@ const steps = () => {
               >
                 <Image
                   layout="fill"
+                  objectFit="contain"
                   alt={activeUser}
-                  src={`/steps/${activeUser}/${item.steps[index].date}.jpeg`}
+                  src={`/static/steps/${activeUser}/${item.steps[index].date}.jpeg`}
                 />
               </div>
             ))}

@@ -2,7 +2,6 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { flag } from "../data";
 import styles from "../styles/Home.module.css";
-import useMediaQuery from "@mui/material/useMediaQuery";
 
 const Carousel = () => {
   const [activeImg, setActiveImg] = useState(flag[0]);
